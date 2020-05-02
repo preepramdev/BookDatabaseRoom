@@ -118,25 +118,25 @@ public class DetailFragment extends Fragment implements
             callTwoButtonDialog("Remove?", "Ok", "Cancel");
         });
 
-//        fetchApi();
+//        fetchDatabase();
     }
 
-    private void fetchApi() {
+    private void fetchDatabase() {
         bookDatabaseController.getBook(mBookId, new BookDatabaseCallBack() {
             @Override
             public void onCallBack(Object result) {
                 mBook = (Book) result;
-                        if (mBook != null) {
-                            String id = mBook.getId().toString();
-                            String title = mBook.getTitle();
-                            String author = mBook.getAuthor();
-                            String page = mBook.getPages();
+                if (mBook != null) {
+                    String id = mBook.getId().toString();
+                    String title = mBook.getTitle();
+                    String author = mBook.getAuthor();
+                    String page = mBook.getPages();
 
-                            tvBookId.setText(id);
-                            tvBookTitle.setText(title);
-                            tvBookAuthor.setText(author);
-                            tvBookPages.setText(page);
-                        }
+                    tvBookId.setText(id);
+                    tvBookTitle.setText(title);
+                    tvBookAuthor.setText(author);
+                    tvBookPages.setText(page);
+                }
             }
         });
     }
@@ -170,7 +170,7 @@ public class DetailFragment extends Fragment implements
     @Override
     public void onResume() {
         super.onResume();
-        fetchApi();
+        fetchDatabase();
     }
 
     @Override
