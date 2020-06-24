@@ -5,9 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.pram.bookdatabaseroom.R;
-import com.pram.bookdatabaseroom.db.BookManager;
 import com.pram.bookdatabaseroom.fragment.MainFragment;
-import com.pram.bookdatabaseroom.model.Book;
 
 public class MainActivity extends AppCompatActivity {
 

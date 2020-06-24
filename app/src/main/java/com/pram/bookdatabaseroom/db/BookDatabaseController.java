@@ -6,7 +6,6 @@ import android.util.Log;
 import com.pram.bookdatabaseroom.manager.Contextor;
 import com.pram.bookdatabaseroom.model.Book;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class BookDatabaseController {

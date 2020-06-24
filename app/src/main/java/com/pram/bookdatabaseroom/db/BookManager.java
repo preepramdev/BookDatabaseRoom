@@ -1,9 +1,6 @@
 package com.pram.bookdatabaseroom.db;
 
 import android.content.Context;
-import android.os.AsyncTask;
-
-import androidx.room.Room;
 
 /**
  * Created by nuuneoi on 12/6/14 AD.
