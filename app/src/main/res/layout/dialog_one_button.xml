@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="@dimen/dialog_width"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <LinearLayout
@@ -15,12 +15,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tvMessage"
-            style="@style/TextViewNormal.Dialog"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Header" />
+        <FrameLayout
+            android:layout_width="@dimen/dialog_width"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvMessage"
+                style="@style/TextViewNormal.Dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                tools:text="Header" />
+
+        </FrameLayout>
 
         <Button
             android:id="@+id/btnSubmit"

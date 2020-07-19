@@ -105,7 +105,7 @@ public class DetailFragment extends Fragment implements
         tvBookAuthor = mRootView.findViewById(R.id.tvBookAuthor);
         tvBookPages = mRootView.findViewById(R.id.tvBookPages);
         btnUpdate = mRootView.findViewById(R.id.btnUpdate);
-        btnRemove = mRootView.findViewById(R.id.btnCancel);
+        btnRemove = mRootView.findViewById(R.id.btnRemove);
 
         btnUpdate.setOnClickListener(v -> {
             Intent intent = new Intent(mContext, UpdateActivity.class);
